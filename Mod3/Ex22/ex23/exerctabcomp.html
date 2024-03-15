@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabelas</title>
     <style>
+        h1 {
+            text-align: center;
+        }
         table {
             border-collapse: collapse;
-            width: 300px;
+            width: 500px;
+            height:300px;
+            margin: auto;
         }
        td{
             border: 1px solid red;
@@ -25,50 +30,53 @@
     </h1>
 
     <table>
-        <tr>
-            <tH>GRUPO</tH>
-            <th>NOMES</th>
-            <th>FILMES</th> 
-        </tr>
-        <tr>
-            <tH rowspan="3">MULHER</tHd>
-            <td>Ana Maria</td>
-            <td>Allien</td>
-            <td>Ramo</td>
-            <td>Vingadores</td>
-        </tr>
-
-        <tr>
-            <td>Beatriz souza</td>
-            <td>hulk</td>
-            <td>Inceptionoi</td>
-            <td>Batman</td>
-        </tr>
-
-        <tr>
-            <td>Claudio</td>
-            <td>Oblivion</td> 
-            <td>Amnesia</td>
-            <td>Gladiador</td>
-        </tr>
-
-        <tr>
-            <th rowspan="3">HOMENS</th>
-            <td>Bruno</td> 
-            <td>Waal-E</td>
-            <td>Oldboy</td>
-            <td>Dangal</td>
-        </tr>
-
-        <tr>
-            <td>Daniel</td>
-            <td>Intocaveis</td>
-            <td>amnesia</td>
-            <td>Dangal</td>
-    </tr>
-      <tr>
-        <td>aldery</td>
-      </tr>
+        <thead>
+            <tr>
+                <tH scope="col">GRUPO</tH>
+                <th scope="col">NOMES</th>
+                <th colspan="3" scope="colgroup">FILMES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <tH rowspan="3" scope="rowgroup">MULHER</tHd>
+                <td>Ana Maria</td>
+                <td>Allien</td>
+                <td>Ramo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz souza</td>
+                <td>hulk</td>
+                <td>Inceptionoi</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudio</td>
+                <td>Oblivion</td>
+                <td>Amnesia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">HOMENS</th>
+                <td>Bruno</td>
+                <td>Waal-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Intocaveis</td>
+                <td>amnesia</td>
+                <td>Dangal</td>
+                </tr>
+                  <tr>
+            <td>fabiano</td>
+            <td>StarWars</td>
+            <td>taxi Driver</td>
+            <td>ToyStory    </td>
+                  </tr>
+        </tbody>
     </table>
 </body>
 </html>
