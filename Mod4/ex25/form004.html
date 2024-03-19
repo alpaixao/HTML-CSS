@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <Legend>Dadps Pessoais</Legend>
+            <p>
+                <label for="imail">Email</label>
+                <input type="email" name="email" id="imail" autocomplete="email" required placeholder="exemplo@seuemail.com">
+                        <!-- estudar mais sobre expressoes regulares RegEx verificar se tem o @ -->
+                  </p>
+                  <p>
+                    <label for="itel">Telefone</label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx) xxxx-xxxx" required>
+                    <!-- estudar mais sobre expressoes regulares RegEx -->
+                  </p>
+                </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    </form>
+</body>
+</html>
