@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* Todas as demais midias */
+
+/* Typical devide Breakpoints 
+tenho para:
+Pequenas telas vai ate 600px
+Celular - vai de 600px ate 768px
+Tablet - vai de 768 aate  992 px
+Desktopo avi de 992px ate 1200x
+TV - acima de 1200px*/
+
+@media print {
+    body {
+        /* background-image: url(../imagens/back-print.jpg); Desncessario */
+    }
+   main h1 {
+
+       text-shadow: none;
+       color: black;
+    } 
+    main {
+        border: 1px solid red; 
+    }
+    main ::after {
+        content: " Essa impressa foi feita por aldery";
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: block;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: block;
+    }
+    img#tv{
+        display: none;
+    }
+
+}
+    
+@media screen and (min-width: 1200px) {
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{
+        display: none;
+    }
+    img#tablet{
+        display: none;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: block;
+    }
+}
+    
